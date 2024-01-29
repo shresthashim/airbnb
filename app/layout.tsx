@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import "./globals.css";
 import React from "react";
 import {Open_Sans} from "next/font/google";
+import Navbar from "@/app/components/Navbar/Navbar";
 
 
 export const metadata: Metadata = {
@@ -18,7 +19,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body className={font.className}>{children}</body>
+        <body className={font.className}>
+        <Navbar/>
+        {children}</body>
         </html>
     );
 }
