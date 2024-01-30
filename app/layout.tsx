@@ -21,7 +21,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={font.className}>
-        <Modal isOpen onClose/>
+        <Modal isOpen title={"Hello"}/>
         <Navbar/>
         {children}</body>
         </html>
