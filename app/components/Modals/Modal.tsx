@@ -93,7 +93,7 @@ const Modal: React.FC<ModalProps> = ({
                             </div>
                             <div className='flex flex-col gap-2 p-6'>
                                 <div className='flex flex-row items-center gap-4 w-full'>
-                                    <Button outline label={"My button"} small onClick={()=>{}}/>
+                                    <Button icon={IoMdClose} label={"My button"} onClick={()=>{}}/>
                                 </div>
                             </div>
                         </div>
