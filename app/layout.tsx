@@ -4,6 +4,7 @@ import React from "react";
 import {Open_Sans} from "next/font/google";
 import Navbar from "@/app/components/Navbar/Navbar";
 import Modal from "@/app/components/Modals/Modal";
+import RegisterModal from "@/app/components/Modals/RegisterModal";
 
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={font.className}>
-        <Modal actionLabel={"Submit"} isOpen title={"Hello"}/>
+        <RegisterModal/>
         <Navbar/>
         {children}</body>
         </html>
